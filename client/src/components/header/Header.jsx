@@ -76,8 +76,8 @@ const Header = () => {
   return (
     <header className={`header ${mobileMenu ? "mobileView" : ""} ${show}`}>
       <ContentWrapper>
-        <div className="logo" onClick={() => navigate("/")}>
-          <img src={logo} alt="" />
+        <div className="logo">
+          <img src={logo} alt="" onClick={() => navigate("/home")} />
           {/* <img src="../../assets/dynaplex-logo-full.png" alt="" /> */}
         </div>
         <ul className="menuItems">

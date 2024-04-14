@@ -1,7 +1,3 @@
-.icon-button:hover .icon {
-  text-shadow: 0 0 10px cyan;
-}
-
 .header {
   position: fixed;
   transform: translateY(0);
@@ -30,8 +26,9 @@
     justify-content: space-between;
   }
   .logo {
-    cursor: pointer;
+    padding-left: 0;
     img {
+      cursor: pointer;
       height: 50px;
     }
   }
@@ -39,6 +36,7 @@
     list-style-type: none;
     align-items: center;
     display: flex;
+
     .menuItem {
       height: 60px;
       display: flex;
@@ -56,7 +54,6 @@
       cursor: pointer;
       &:hover {
         color: cyan;
-        text-shadow: 0 0 10px cyan;
       }
     }
   }
@@ -72,13 +69,13 @@
   }
 
   &.mobileView {
-    background: var(#292929);
+    background: #292929;
     .menuItems {
       display: flex;
       position: absolute;
       top: 60px;
       left: 0;
-      background: var(#292929);
+      background: #292929;
       flex-direction: column;
       width: 100%;
       padding: 20px 0;
